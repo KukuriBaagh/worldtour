@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  {% load static %}
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Europe Trips</h1>
+    <ul>
+      {% for trip in trips %}
+      <ul>
+        {{trip}}
+      </ul>
+      {% endfor %}
+    </ul>
+    <img
+      src="{%static 'images/image1.jpg'%}"
+      alt="Image"
+      style="width:120px, margin-top:50px"
+    />
+  </body>
+</html>
